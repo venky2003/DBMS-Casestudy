@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Train Booking System</title>
+</head>
+<body>
+    <div class="container" id="userForm">
+        <h2>User Information</h2>
+        <form method="post" action="#" onsubmit="submitUserForm(event)">
+            <label for="f_name">First Name:</label>
+            <input type="text" name="f_name" placeholder="Enter your first name" required>
+
+            <label for="i_name">Initial Name:</label>
+            <input type="text" name="i_name" placeholder="Enter your initial name" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+
+            <label for="gender">Gender:</label>
+            <select name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="martial">Marital Status:</label>
+            <select name="martial" required>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+            </select>
+
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" name="DOB" required>
+
+            <label for="ans">Answer:</label>
+            <input type="text" name="ans" placeholder="Enter your answer" required>
+
+            <label for="Mobile">Mobile Number:</label>
+            <input type="tel" name="Mobile" placeholder="Enter your mobile number" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="container" id="trainForm">
+        <h2>Train Booking</h2>
+        <form method="post" action="#" onsubmit="submitBookingForm(event)">
+            <label for="train_no">Train Number:</label>
+            <input type="text" name="train_no" placeholder="Enter train number" required>
+
+            <label for="train_name">Train Name:</label>
+            <input type="text" name="train_name" placeholder="Enter train name" required>
+
+            <label for="origin">Origin:</label>
+            <input type="text" name="origin" placeholder="Enter origin" required>
+
+            <label for="destination">Destination:</label>
+            <input type="text" name="destination" placeholder="Enter destination" required>
+
+            <label for="arrival">Arrival Time:</label>
+            <input type="time" name="arrival" required>
+
+            <label for="doj">Date of Journey:</label>
+            <input type="date" name="doj" required>
+
+            <label for="Class">Class:</label>
+            <select name="Class" required>
+                <option value="SL">Sleeper</option>
+                <option value="1A">1st AC</option>
+                <option value="2A">2nd AC</option>
+                <option value="3A">3rd AC</option>
+            </select>
+
+            <label for="tatkal">Tatkal:</label>
+            <input type="checkbox" name="tatkal">
+
+            <label for="seat_type">Seat Type:</label>
+            <select name="seat_type" required>
+                <option value="SL">Sleeper</option>
+                <option value="General">General</option>
+                <option value="1A">1st AC</option>
+                <option value="2A">2nd AC</option>
+                <option value="3A">3rd AC</option>
+            </select>
+
+            <button type="submit">Book Ticket</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
